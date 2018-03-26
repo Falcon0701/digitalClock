@@ -1,24 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lets-go-Digital-Regular.ttf">
+            <string>LetsgoDigital-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DigitalClock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="29633927_1988295064575552_339178626_o.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zv3-VV-Fwl">
+                                <rect key="frame" x="-10" y="7" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fzt-Ll-ISx">
+                                <rect key="frame" x="109" y="126" width="156" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VQh-XW-hjM">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="80"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m27-vF-5aN">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1m-eA-HvC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="156" height="80"/>
+                                                        <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="80"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-6A-DXG">
+                                <rect key="frame" x="273" y="151" width="31" height="30"/>
+                                <fontDescription key="fontDescription" name="LetsgoDigital-Regular" family="Let's go Digital" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zv3-VV-Fwl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="8pt-ci-2oG"/>
+                            <constraint firstItem="5dU-6A-DXG" firstAttribute="centerY" secondItem="fzt-Ll-ISx" secondAttribute="centerY" id="A8t-Ix-Ujj"/>
+                            <constraint firstItem="fzt-Ll-ISx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="LW9-1I-CNQ"/>
+                            <constraint firstItem="Zv3-VV-Fwl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="7" id="SxB-YV-7Rb"/>
+                            <constraint firstItem="5dU-6A-DXG" firstAttribute="leading" secondItem="fzt-Ll-ISx" secondAttribute="trailing" constant="8" id="X9p-dy-JXE"/>
+                            <constraint firstItem="Zv3-VV-Fwl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="7" id="a2W-Xy-bLY"/>
+                            <constraint firstItem="fzt-Ll-ISx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a94-A7-zll"/>
+                            <constraint firstItem="Zv3-VV-Fwl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-10" id="bUS-wT-Dod"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="29633927_1988295064575552_339178626_o.jpg" width="1080" height="1920"/>
+    </resources>
 </document>

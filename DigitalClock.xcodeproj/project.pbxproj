@@ -14,6 +14,8 @@
 		225E5AFD2068E7B80043942B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225E5AFB2068E7B80043942B /* LaunchScreen.storyboard */; };
 		225E5B082068E7B80043942B /* DigitalClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E5B072068E7B80043942B /* DigitalClockTests.swift */; };
 		225E5B132068E7B80043942B /* DigitalClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E5B122068E7B80043942B /* DigitalClockUITests.swift */; };
+		225E5B232068E7FA0043942B /* 29633927_1988295064575552_339178626_o.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 225E5B212068E7FA0043942B /* 29633927_1988295064575552_339178626_o.jpg */; };
+		225E5B242068E7FA0043942B /* Lets-go-Digital-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 225E5B222068E7FA0043942B /* Lets-go-Digital-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		225E5B0E2068E7B80043942B /* DigitalClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		225E5B122068E7B80043942B /* DigitalClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClockUITests.swift; sourceTree = "<group>"; };
 		225E5B142068E7B80043942B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225E5B212068E7FA0043942B /* 29633927_1988295064575552_339178626_o.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 29633927_1988295064575552_339178626_o.jpg; path = ../../../Downloads/29633927_1988295064575552_339178626_o.jpg; sourceTree = "<group>"; };
+		225E5B222068E7FA0043942B /* Lets-go-Digital-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lets-go-Digital-Regular.ttf"; path = "../../../Downloads/Lets-go-Digital-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				225E5B062068E7B80043942B /* DigitalClockTests */,
 				225E5B112068E7B80043942B /* DigitalClockUITests */,
 				225E5AF02068E7B80043942B /* Products */,
+				225E5B202068E7CA0043942B /* Resource */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +128,15 @@
 				225E5B142068E7B80043942B /* Info.plist */,
 			);
 			path = DigitalClockUITests;
+			sourceTree = "<group>";
+		};
+		225E5B202068E7CA0043942B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				225E5B212068E7FA0043942B /* 29633927_1988295064575552_339178626_o.jpg */,
+				225E5B222068E7FA0043942B /* Lets-go-Digital-Regular.ttf */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +249,8 @@
 				225E5AFD2068E7B80043942B /* LaunchScreen.storyboard in Resources */,
 				225E5AFA2068E7B80043942B /* Assets.xcassets in Resources */,
 				225E5AF82068E7B80043942B /* Main.storyboard in Resources */,
+				225E5B232068E7FA0043942B /* 29633927_1988295064575552_339178626_o.jpg in Resources */,
+				225E5B242068E7FA0043942B /* Lets-go-Digital-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
